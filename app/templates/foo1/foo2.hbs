@@ -1,0 +1,17 @@
+	<h3>Foo2</h3>
+
+	{{#each model as |letter|}}
+	{{letter}}<br>
+	{{/each}}
+
+	<h3>Model injected in from the foo1 controller</h3>
+	
+	{{#each foo1Model as |letters|}}
+	 {{letters}}
+	{{/each}}
+
+	<h3>Foo1 property</h3>
+	{{foo1Controller.prop1}}
+
+	
+{{outlet}}
